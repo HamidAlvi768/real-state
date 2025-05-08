@@ -1,12 +1,14 @@
-/* 
+
+/*Red*/
 :root{
   --primary1: #D18233;
-  --primary2: #80470F ;
-} */
-:root{
+  --primary2: #8C3232 ;
+}
+/*Blue*/
+/* :root{
   --primary1: #3554d1 ;
   --primary2: #0f2480;
-}
+} */
 
 
 body {
@@ -822,7 +824,7 @@ a:focus {
   outline: none;
   border: none;
   color: #ffffff;
-  background: #f97616;
+  background: var(--primary2);
   border-radius: 25px;
   margin: 45px 0 0 auto;
   text-transform: uppercase;
@@ -841,6 +843,11 @@ a:focus {
   background-color: var(--primary2);
   color: #ffffff;
   padding: 90px 0 45px 0;
+}
+
+.info_section .row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .info_section h5 {
