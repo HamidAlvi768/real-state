@@ -23,6 +23,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body>
@@ -34,31 +35,20 @@
           <a class="navbar-brand" href="index.html">
             <img class="home-logo" src="images/logo.png" alt="" />
           </a>
-          <div class="navbar-collapse" id="">
-            <ul class="navbar-nav justify-content-between ">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
+              <li class="nav-item"><a class="nav-link" href="our-services.html">OUR SERVICES</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
             </ul>
-
-            <div class="custom_menu-btn">
-              <button onclick="openNav()">
-                <span class="s-1">
-
-                </span>
-                <span class="s-2">
-
-                </span>
-                <span class="s-3">
-
-                </span>
-              </button>
-            </div>
-            <div id="myNav" class="overlay">
-              <div class="overlay-content">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="house.html">HOUSE</a>
-                <a href="contact.html">CONTACT US</a>
-              </div>
-            </div>
+            <a href="https://wa.me/923040050050" class="navbar-whatsapp ml-lg-3 d-flex align-items-center" target="_blank" style="color:#25d366;font-weight:bold;font-size:1.1em; white-space: nowrap;">
+              <i class="fab fa-whatsapp" style="font-size:1.5em;margin-right:8px;"></i> +92 304 0050050
+            </a>
           </div>
         </nav>
       </div>
@@ -77,11 +67,6 @@
               <p>
                 Delivering versatile and high-quality solutions in Real Estate, Construction, Security, Advertising, and General Services. Committed to quality, innovation, integrity, and client satisfaction.
               </p>
-              <div class="btn-box">
-                <a href="about.html" class="">
-                  Learn More
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -117,9 +102,6 @@
             <p>
               Founded in 2024, Macallan Services (Pvt) Ltd is a leading service provider across multiple industries. We focus on delivering versatile, high-quality solutions tailored to diverse client needs. Our core values are Quality, Innovation, Integrity, and Client-Centricity.
             </p>
-            <a href="about.html">
-              Read More
-            </a>
           </div>
         </div>
       </div>
@@ -179,10 +161,10 @@
             </div>
             <div class="detail-box">
               <h3 class="price">
-                1000+
+                5+
               </h3>
               <h5>
-                Years of House
+                Years in the market
               </h5>
             </div>
           </div>
@@ -194,10 +176,10 @@
             </div>
             <div class="detail-box">
               <h3>
-                20000+
+                100+
               </h3>
               <h5>
-                Projects Delivered
+                Projects delivered
               </h5>
             </div>
           </div>
@@ -209,10 +191,10 @@
             </div>
             <div class="detail-box">
               <h3>
-                10000+
+                98%
               </h3>
               <h5>
-                Satisfied Customers
+                Customer satisfaction
               </h5>
             </div>
           </div>
@@ -224,10 +206,10 @@
             </div>
             <div class="detail-box">
               <h3>
-                1500+
+                Lowest
               </h3>
               <h5>
-                Cheap Rates
+                Affordable Rates
               </h5>
             </div>
           </div>
@@ -244,7 +226,7 @@
     <div class="container-fluid">
       <div class="heading_container">
         <h2>
-          What is Says Our Customer
+          What Our Customers Say  
         </h2>
       </div>
       <div class="client_container">
@@ -357,10 +339,7 @@
             </h5>
             <!-- Social Links -->
             <div class="social_box">
-              <a href=""><img src="images/fb.png" alt=""></a>
-              <a href=""><img src="images/twitter.png" alt=""></a>
-              <a href=""><img src="images/linkedin.png" alt=""></a>
-              <a href=""><img src="images/youtube.png" alt=""></a>
+              <a href="https://wa.me/923040050050" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a>
             </div>
           </div>
         </div>
@@ -370,6 +349,35 @@
 
   <!-- end info_section -->
 
+  <a href="https://wa.me/923040050050" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <img src="images/whatsapp.png" alt="WhatsApp" style="width:60px;height:60px;">
+  </a>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
+      z-index: 1000;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      border-radius: 50%;
+      background: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: box-shadow 0.2s;
+    }
+    .whatsapp-float:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .whatsapp-float img {
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+    }
+  </style>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
