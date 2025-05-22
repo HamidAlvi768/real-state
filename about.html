@@ -40,11 +40,12 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link active" href="about.html">ABOUT</a></li>
               <li class="nav-item"><a class="nav-link" href="projects.html">PROJECTS</a></li>
               <li class="nav-item"><a class="nav-link" href="our-services.html">OUR SERVICES</a></li>
+              <li class="nav-item"><a class="nav-link" href="our-team.html">OUR TEAM</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
             </ul>
             <a href="https://wa.me/923040050050" class="navbar-whatsapp ml-lg-3 d-flex align-items-center" target="_blank" style="color:#25d366;font-weight:bold;font-size:1.1em; white-space: nowrap;">
@@ -92,15 +93,26 @@
   <!-- mission and values section -->
   <section class="mission_section layout_padding-bottom">
     <div class="container">
-      <div class="heading_container">
-        <h2>Mission and Values</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>Mission and Values</h2>
+            </div>
+            <ul class="mission-list">
+              <li><b>Quality:</b> Striving for the highest standards in every service</li>
+              <li><b>Innovation:</b> Embracing new ideas, technologies, and creative solutions</li>
+              <li><b>Integrity:</b> Operating with honesty, transparency, and respect</li>
+              <li><b>Client-centric:</b> Prioritizing the needs and satisfaction of clients</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/mission-values.jpg" alt="Mission and Values" class="img-fluid">
+          </div>
+        </div>
       </div>
-      <ul>
-        <li><b>Quality:</b> Striving for the highest standards in every service</li>
-        <li><b>Innovation:</b> Embracing new ideas, technologies, and creative solutions</li>
-        <li><b>Integrity:</b> Operating with honesty, transparency, and respect</li>
-        <li><b>Client-centric:</b> Prioritizing the needs and satisfaction of clients</li>
-      </ul>
     </div>
   </section>
   <!-- end mission and values section -->
@@ -108,34 +120,30 @@
   <!-- services section -->
   <section class="services_section layout_padding-bottom">
     <div class="container">
-      <div class="heading_container">
-        <h2>Our Services</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/services.jpg" alt="Our Services" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>Our Services</h2>
+            </div>
+            <ul class="services-list">
+              <li><b>Real Estate Solutions:</b> Land acquisition, property development, buying/selling, leasing, investment advice</li>
+              <li><b>Construction Services:</b> Residential, commercial, infrastructure projects</li>
+              <li><b>Security Services:</b> Surveillance installation, risk assessments, security personnel</li>
+              <li><b>Advertising Services:</b> Digital & traditional advertising, brand visibility</li>
+              <li><b>General Services:</b> Versatile solutions for various needs</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <ul>
-        <li><b>Real Estate Solutions:</b> Land acquisition, property development, buying/selling, leasing, investment advice</li>
-        <li><b>Construction Services:</b> Residential, commercial, infrastructure projects</li>
-        <li><b>Security Services:</b> Surveillance installation, risk assessments, security personnel</li>
-        <li><b>Advertising Services:</b> Digital & traditional advertising, brand visibility</li>
-        <li><b>General Services:</b> Versatile solutions for various needs</li>
-      </ul>
     </div>
   </section>
   <!-- end services section -->
-
-  <!-- team section -->
-  <section class="team_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container">
-        <h2>Leadership Team</h2>
-      </div>
-      <ul>
-        <li><b>Raja Farhan Asif</b> - Chief Executive Officer (CEO)<br>Son of Raja Asif Khan<br>Provides vision and innovation, drives strategic growth in Pakistan's real estate market</li>
-        <li><b>Raja Faisar</b> - Chief Executive Officer (CEO)<br>Son of Raja Gustasab<br>Ensures delivery of value and quality through experience and strategic insight</li>
-        <li><b>Jafar Ali</b> - General Manager<br>Son of Mukhtiar<br>Oversees operations with precision, ensures seamless processes and exceptional service delivery</li>
-      </ul>
-    </div>
-  </section>
-  <!-- end team section -->
 
   <!-- info section -->
   <section class="info_section ">
@@ -179,9 +187,19 @@
             </h5>
             <!-- Social Links -->
             <div class="social_box">
-              <a href="https://wa.me/923040050050" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+              <a href="https://wa.me/923040050050" target="_blank" style="color: #25d366; font-size: 24px; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <i class="fab fa-whatsapp"></i>
+                <span style="color: #ffff; font-size: 16px;">+92 304 0050050</span>
+              </a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 text-center">
+          <p style="color: #ffff; font-size: 14px;">
+            Powered by <a href="https://jantrah.com" target="_blank" style="color: #2d2926; text-decoration: none;">Jantrah Tech</a>
+          </p>
         </div>
       </div>
     </div>
@@ -216,6 +234,119 @@
       width: 60%;
       height: 60%;
       object-fit: contain;
+    }
+
+    .mission_section, .services_section {
+      padding: 60px 0;
+    }
+
+    .mission_section {
+      background-color: #f8f9fa;
+    }
+
+    .services_section {
+      background-color: #fff;
+    }
+
+    .mission-list, .services-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mission-list li, .services-list li {
+      margin-bottom: 20px;
+      padding-left: 30px;
+      position: relative;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .mission-list li:before, .services-list li:before {
+      content: "•";
+      color: var(--primary2);
+      font-size: 24px;
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
+
+    .mission-list li b, .services-list li b {
+      color: var(--primary2);
+      display: block;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    .img-box {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .heading_container {
+      margin-bottom: 30px;
+    }
+
+    .heading_container h2 {
+      position: relative;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #333;
+      padding-bottom: 15px;
+    }
+
+    .heading_container h2::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: var(--primary2);
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .mission_section, .services_section {
+        padding: 40px 0;
+      }
+
+      .img-box {
+        margin-top: 30px;
+      }
+
+      .mission-list li, .services-list li {
+        font-size: 14px;
+      }
+
+      .mission-list li b, .services-list li b {
+        font-size: 16px;
+      }
+    }
+
+    .nav-link.active {
+      color: var(--primary2) !important;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--primary2);
     }
   </style>
 
